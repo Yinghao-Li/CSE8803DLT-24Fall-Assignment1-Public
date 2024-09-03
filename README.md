@@ -26,6 +26,9 @@ python assignment1.py
 If you implementation is correct, you will see "The output is correct." printed out on your terminal.
 Otherwise, you will encounter assertion errors.
 
+**Notice** that passing the test case does not necessary means that your implementation in entirely right.
+Please check the code and read the paper carefully to see whether you have missed some components.
+
 
 ## Submission
 

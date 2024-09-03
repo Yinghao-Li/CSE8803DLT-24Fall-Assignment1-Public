@@ -48,7 +48,6 @@ causal_self_attention.load_state_dict(torch.load("causal_self_attention.pt"))
 # Test the model
 # shape: (batch_size, seq_len, d_model)
 x = torch.load("x.pt")
-# x = torch.rand(2, 16, d_model)
 
 y = causal_self_attention(x)
 y_expected = torch.load("y.pt")

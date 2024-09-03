@@ -30,7 +30,3 @@ Otherwise, you will encounter assertion errors.
 ## Submission
 
 You can directly submit the modified `assignment1.py` file to Canvas.
-
-## Reference
-
-With default hyper-parameters, each training epoch takes roughly 30s to run on Mac M1 CPU, ~~18s on mps,~~ and 2s on Nvidia A5000/RTX4090 GPU.

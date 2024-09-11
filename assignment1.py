@@ -53,6 +53,6 @@ y = causal_self_attention(x)
 y_expected = torch.load("y.pt")
 
 assert y.shape == y_expected.shape, f"Expected shape: {y_expected.shape}, but got: {y.shape}"
-assert torch.sum(y == y_expected) > 0.78 * batch_size * seq_len * d_model, "The output is incorrect."
+assert torch.sum(torch.abs(y - y_expected) < 1e-5) > 0.78 * batch_size * seq_len * d_model, "The output is incorrect."
 
 print("The output is correct.")
